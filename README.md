@@ -20,7 +20,7 @@ This is a lightweight blog platform built using **Python Flask** that allows use
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 Blog-web-Python-main/
 │
 ├── blog.py                  # Main Flask application
@@ -39,7 +39,7 @@ Blog-web-Python-main/
 │   └── login.html
 │
 └── README.md               # Project README
-\`\`\`
+```
 
 ## 🧪 Running the App
 
