@@ -1,0 +1,182 @@
+/* Global styles */
+:root {
+    --base-hue: 180;
+    --base-sat: 62%;
+  
+    /* full color palette, from dark to light */
+    --clr-10: hsl(var(--base-hue), var(--base-sat), 10%);
+    --clr-20: hsl(var(--base-hue), var(--base-sat), 20%);
+    --clr-30: hsl(var(--base-hue), var(--base-sat), 30%);
+    --clr-40: hsl(var(--base-hue), var(--base-sat), 40%);
+    --clr-50: hsl(var(--base-hue), var(--base-sat), 50%);
+    --clr-60: hsl(var(--base-hue), var(--base-sat), 60%);
+    --clr-70: hsl(var(--base-hue), var(--base-sat), 70%);
+    --clr-80: hsl(var(--base-hue), var(--base-sat), 80%);
+    --clr-90: hsl(var(--base-hue), var(--base-sat), 90%);
+    --clr-95: hsl(var(--base-hue), var(--base-sat), 95%);
+  
+  
+    --primary-lightness: 50%;
+  
+    /* primary color in varying opacity levels */
+    --primary: hsl(var(--base-hue), var(--base-sat), var(--primary-lightness));
+    --primary-75: hsla(var(--base-hue), var(--base-sat), var(--primary-lightness), 75%);
+    --primary-50: hsla(var(--base-hue), var(--base-sat), var(--primary-lightness), 50%);
+    --primary-25: hsla(var(--base-hue), var(--base-sat), var(--primary-lightness), 25%);
+    --primary-15: hsla(var(--base-hue), var(--base-sat), var(--primary-lightness), 15%);
+    --primary-10: hsla(var(--base-hue), var(--base-sat), var(--primary-lightness), 10%);
+  
+  
+    --accent-hue: calc(var(--base-hue) + 90);
+    --accent-lightness: 50%;
+  
+    /* accent color in varying opacity levels */
+    --accent: hsl(var(--accent-hue), var(--base-sat), var(--accent-lightness));
+    --accent-75: hsla(var(--accent-hue), var(--base-sat), var(--accent-lightness), 75%);
+    --accent-50: hsla(var(--accent-hue), var(--base-sat), var(--accent-lightness), 50%);
+    --accent-25: hsla(var(--accent-hue), var(--base-sat), var(--accent-lightness), 25%);
+    --accent-15: hsla(var(--accent-hue), var(--base-sat), var(--accent-lightness), 15%);
+    --accent-10: hsla(var(--accent-hue), var(--base-sat), var(--accent-lightness), 10%);
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-95);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--clr-90);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background-color: var(--clr-20);
+    color: var(--clr-95);
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.header h1 {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.blog-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.blog-item {
+    background-color: var(--clr-95);
+    border: 1px solid var(--clr-95);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.blog-item h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.blog-item p {
+    margin-top: 0;
+}
+
+.blog-content {
+    white-space: pre-wrap;
+}
+
+h2 {
+    color: var(--clr-20);
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--clr-95);
+    background-color: var(--clr-20);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--clr-30);
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn {
+    margin-right: 20px;
+}
+
+.logout-btn {
+    margin-right: 20px;
+}
+
+.add-blog {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Form styles */
+.form-container {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+}
